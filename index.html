@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DevNexa | Smart Code. Seamless Experience.</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Segoe UI', sans-serif; background: #f8fafc; color: #0f172a; line-height: 1.6; }
+    header, main, footer { max-width: 1100px; margin: auto; padding: 20px; }
+    header { display: flex; align-items: center; justify-content: space-between; }
+    nav a { margin: 0 10px; color: #334155; text-decoration: none; font-size: 14px; }
+    nav a:hover { color: #0f172a; }
+    .logo { display: flex; align-items: center; gap: 10px; }
+    .logo svg { height: 40px; width: 40px; }
+    .btn { display: inline-flex; align-items: center; gap: 5px; background: #2563eb; color: #fff; padding: 10px 20px; border-radius: 8px; text-decoration: none; transition: 0.3s; }
+    .btn:hover { background: #1e40af; }
+    .btn-outline { border: 1px solid #cbd5e1; color: #334155; background: none; }
+    .btn-outline:hover { background: #f1f5f9; }
+    section { margin: 60px 0; }
+    h2, h3, h4 { margin-bottom: 10px; }
+    p { margin-bottom: 15px; color: #475569; }
+    .grid { display: grid; gap: 20px; }
+    .two-col { grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); }
+    .three-col { grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); }
+    .card { background: #fff; border: 1px solid #e2e8f0; border-radius: 12px; padding: 20px; box-shadow: 0 1px 2px rgba(0,0,0,0.05); }
+    form input, form textarea { width: 100%; padding: 10px; border: 1px solid #cbd5e1; border-radius: 6px; margin-top: 5px; }
+    form label { font-size: 14px; color: #334155; }
+    footer { border-top: 1px solid #e2e8f0; padding: 30px 20px; display: flex; flex-direction: column; align-items: center; text-align: center; }
+    footer p { font-size: 14px; color: #64748b; }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M50 8 L78 30 V54 L50 76 L22 54 V30 Z" fill="#f8fafc" />
+        <path d="M50 8 L78 30 L50 52 L22 30 Z" fill="#1776FF" />
+        <path d="M50 52 L78 30 V74 L50 96 L22 74 V30 Z" fill="#2E343A" />
+      </svg>
+      <div>
+        <h1 style="font-size: 18px; font-weight: 700;">DevNexa</h1>
+        <p style="font-size: 12px; color:#64748b">Smart Code. Seamless Experience.</p>
+      </div>
+    </div>
+    <nav>
+      <a href="#services">Services</a>
+      <a href="#work">Portfolio</a>
+      <a href="#about">About</a>
+      <a href="#contact" class="btn">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="hero" class="two-col">
+      <div>
+        <h2 style="font-size: 36px; font-weight: 800;">Crafting scalable web apps and clean, dependable interfaces.</h2>
+        <p>I build performant websites and web apps that help businesses convert visitors into customers. Specialties: React, Next.js, Tailwind CSS, TypeScript, and API design.</p>
+        <div style="margin-top: 20px;">
+          <a href="https://wa.me/2348148952255" target="_blank" class="btn">Send Message</a>
+          <a href="#work" class="btn btn-outline">View Portfolio</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="services">
+      <h3>Services</h3>
+      <p>End-to-end web development services for startups and businesses.</p>
+      <div class="grid three-col">
+        <div class="card">
+          <h4>Web Applications</h4>
+          <p>Scalable SPAs & SSR apps using React, Next.js and TypeScript.</p>
+        </div>
+        <div class="card">
+          <h4>UI & Frontend</h4>
+          <p>Pixel-perfect interfaces, component libraries and accessibility-first design.</p>
+        </div>
+        <div class="card">
+          <h4>API & Integrations</h4>
+          <p>REST/GraphQL APIs, payment integrations, and deployment pipelines.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="work">
+      <h3>Portfolio</h3>
+      <p>Selected projects showcasing a mix of design and engineering.</p>
+      <div class="grid three-col">
+        <div class="card">
+          <h4>Project 1</h4>
+          <p>A short description describing goals, tech stack and outcome. Delivered in 6 weeks.</p>
+        </div>
+        <div class="card">
+          <h4>Project 2</h4>
+          <p>A short description describing goals, tech stack and outcome. Delivered in 6 weeks.</p>
+        </div>
+        <div class="card">
+          <h4>Project 3</h4>
+          <p>A short description describing goals, tech stack and outcome. Delivered in 6 weeks.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <h3>About DevNexa</h3>
+      <p>DevNexa is a freelance web development studio focused on building production-grade web apps. I bring startup experience, clean engineering, and a product-first mindset to every engagement. Whether you need a landing page or a full SaaS product, I can help design, build, and ship it.</p>
+    </section>
+
+    <section id="contact">
+      <h3>Get in touch</h3>
+      <p>Tell me about your project. I usually reply within 24–48 hours.</p>
+      <div class="grid two-col">
+        <form>
+          <label>Your name<input type="text" required></label>
+          <label>Email<input type="email" required></label>
+          <label>Message<textarea rows="5" required></textarea></label>
+          <div style="margin-top:15px; display:flex; gap:10px;">
+            <a href="https://wa.me/2348148952255" target="_blank" class="btn">Send Message</a>
+            <a href="mailto:devnexa63@gmail.com" class="btn btn-outline">Or email directly</a>
+          </div>
+        </form>
+        <div class="card">
+          <h4>Contact</h4>
+          <p>devnexa63@gmail.com<br>Remote / Nigeria-based</p>
+          <h4>Typical engagements</h4>
+          <p>Landing pages, MVPs, SaaS features, and UI/UX improvements.</p>
+          <h4>Rates</h4>
+          <p>Available on request — project-based or hourly.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="logo">
+      <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" style="height:30px;width:30px;">
+        <path d="M50 8 L78 30 V54 L50 76 L22 54 V30 Z" fill="#f8fafc" />
+        <path d="M50 8 L78 30 L50 52 L22 30 Z" fill="#1776FF" />
+        <path d="M50 52 L78 30 V74 L50 96 L22 74 V30 Z" fill="#2E343A" />
+      </svg>
+      <p style="font-weight:600">DevNexa</p>
+    </div>
+    <p>© <span id="year"></span> DevNexa. All rights reserved.</p>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
